@@ -62,9 +62,9 @@ export class AppComponent {
       color: 'rojo',
       distanceTravel: 0,
       pilot: PILOT_1,
-      status: 'DETENIDO',
+      status: 'STOP',
       start() {
-        this.status = 'AVANZANDO'
+        this.status = 'RUN'
         this.updateDistance(1);
       },
       updateDistance(distanceT: number) {
@@ -72,7 +72,7 @@ export class AppComponent {
 
       },
       stop() {
-        this.status = 'DETENIDO'
+        this.status = 'STOP'
       },
     }
 
@@ -81,16 +81,16 @@ export class AppComponent {
       color: 'azul',
       distanceTravel: 0,
       pilot: PILOT_2,
-      status: 'DETENIDO',
+      status: 'STOP',
       start() {
-        this.status = 'AVANZANDO'
+        this.status = 'RUN'
         this.updateDistance(1);
       },
       updateDistance(distanceT: number) {
         this.distanceTravel = moveCar(distanceT, this.distanceTravel) + this.distanceTravel;
       },
       stop() {
-        this.status = 'DETENIDO'
+        this.status = 'STOP'
       },
     }
 
@@ -99,16 +99,16 @@ export class AppComponent {
       color: 'negro',
       distanceTravel: 0,
       pilot: PILOT_3,
-      status: 'DETENIDO',
+      status: 'STOP',
       start() {
-        this.status = 'AVANZANDO'
+        this.status = 'RUN'
         this.updateDistance(1);
       },
       updateDistance(distanceT: number) {
         this.distanceTravel = moveCar(distanceT, this.distanceTravel) + this.distanceTravel;
       },
       stop() {
-        this.status = 'DETENIDO'
+        this.status = 'STOP'
       },
     }
 
@@ -117,16 +117,16 @@ export class AppComponent {
       color: 'blanco',
       distanceTravel: 0,
       pilot: PILOT_4,
-      status: 'DETENIDO',
+      status: 'STOP',
       start() {
-        this.status = 'AVANZANDO'
+        this.status = 'RUN'
         this.updateDistance(1);
       },
       updateDistance(distanceT: number) {
         this.distanceTravel = moveCar(distanceT, this.distanceTravel) + this.distanceTravel;
       },
       stop() {
-        this.status = 'DETENIDO'
+        this.status = 'STOP'
       },
     }
 
@@ -134,16 +134,16 @@ export class AppComponent {
       numberCar: 3,
       color: 'negro',
       distanceTravel: 0,
-      status: 'DETENIDO',
+      status: 'STOP',
       start() {
-        this.status = 'AVANZANDO'
+        this.status = 'RUN'
         this.updateDistance(1);
       },
       updateDistance(distanceT: number) {
         this.distanceTravel = moveCar(distanceT, this.distanceTravel) + this.distanceTravel;
       },
       stop() {
-        this.status = 'DETENIDO'
+        this.status = 'STOP'
       },
     }
 
